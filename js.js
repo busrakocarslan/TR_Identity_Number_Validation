@@ -31,7 +31,7 @@ btn.addEventListener("click", (e) => {
       Number(yeniTC[8]) +
       deneme) %
     10;
-  if (TC.value.length < 11) {
+  if (TC.value.length < 11 || TC.value.length > 11 ) {
     msg.textContent = "TC Kimlik Numaranız 11 haneli olmalıdır!";
     setTimeout(() => {
       msg.textContent = "";
